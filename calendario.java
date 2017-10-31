@@ -22,4 +22,25 @@ public class calendario
         anno = 1;
     }
 
+    /**
+     * Avanza la fecha 1 día
+     */
+    public void avanzarFecha()
+    {
+        if(dia < 30){
+            dia = dia + 1;
+        }
+        else{
+            dia = 1;
+            if(mes < 12)
+            {
+                mes = mes + 1;
+            }
+            else{
+                mes = 1;
+                anno = anno + 1;
+            }
+        }
+    }
+
 }
