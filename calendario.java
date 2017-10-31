@@ -42,5 +42,14 @@ public class calendario
             }
         }
     }
-
+    
+    /**
+     * Ficha la fecha que se indica
+     */
+    public void fijaFecha(int d, int m, int a)
+    {
+        dia = d;
+        mes = m;
+        anno = a;
+    }
 }
