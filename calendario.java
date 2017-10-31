@@ -17,9 +17,9 @@ public class calendario
      */
     public calendario()
     {
-        dia = 1;
-        mes = 1;
-        anno = 1;
+        dia = 01;
+        mes = 01;
+        anno = 01;
     }
 
     /**
@@ -51,5 +51,24 @@ public class calendario
         dia = d;
         mes = m;
         anno = a;
+    }
+    
+    public String obtenerFecha()
+    {
+        String mostrarFecha;
+        String d = String.valueOf(dia);
+        String m = String.valueOf(mes);
+        String a = String.valueOf(anno);
+        
+        if(dia < 10){
+            d = "0" + d;
+        }
+        if(mes < 10){
+            m = "0" + m;
+        }
+        if(anno < 10){
+            a = "0" + a;
+        }
+        return (dia + "-" + mes + "-" + anno);
     }
 }
